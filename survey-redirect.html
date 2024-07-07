@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Redirect</title>
+    <script>
+        window.onload = function() {
+            var urls = [
+                // Version A
+                'https://forms.gle/C8fqVrEXgt2UpuSt6',
+                // Version B
+                'https://forms.gle/t1Xo6ZPZUi1cVNRi7',
+                // Version C
+                'https://forms.gle/LNNehq9wacfHNUMi8',
+                // Version D
+                'https://forms.gle/s22frF4UYNJgrkpV9'
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
